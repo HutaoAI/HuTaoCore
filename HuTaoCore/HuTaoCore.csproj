@@ -45,9 +45,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bind\BindBase.cs" />
     <Compile Include="ExtenTion\BitmapExtention.cs" />
     <Compile Include="ExtenTion\HalconExtention.cs" />
+    <Compile Include="FileHelper\ClassSerializeHelper.cs" />
+    <Compile Include="FileHelper\InitHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflect\ReflectGetClass.cs" />
+    <Compile Include="SQL\ISQL.cs" />
+    <Compile Include="SQL\SqlServer\SqlServerHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

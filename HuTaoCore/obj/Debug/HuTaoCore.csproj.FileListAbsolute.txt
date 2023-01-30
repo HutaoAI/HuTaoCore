@@ -6,3 +6,11 @@ C:\Users\lhy\Desktop\HuTao\HuTaoCore\HuTaoCore\obj\Debug\HuTaoCore.csproj.CoreCo
 C:\Users\lhy\Desktop\HuTao\HuTaoCore\HuTaoCore\obj\Debug\HuTaoCore.csproj.CopyComplete
 C:\Users\lhy\Desktop\HuTao\HuTaoCore\HuTaoCore\obj\Debug\HuTaoCore.dll
 C:\Users\lhy\Desktop\HuTao\HuTaoCore\HuTaoCore\obj\Debug\HuTaoCore.pdb
+C:\Users\Opto\Desktop\HuTao\HuTaoCore\HuTaoCore\bin\Debug\HuTaoCore.dll
+C:\Users\Opto\Desktop\HuTao\HuTaoCore\HuTaoCore\bin\Debug\HuTaoCore.pdb
+C:\Users\Opto\Desktop\HuTao\HuTaoCore\HuTaoCore\bin\Debug\halcondotnet.dll
+C:\Users\Opto\Desktop\HuTao\HuTaoCore\HuTaoCore\obj\Debug\HuTaoCore.csproj.AssemblyReference.cache
+C:\Users\Opto\Desktop\HuTao\HuTaoCore\HuTaoCore\obj\Debug\HuTaoCore.csproj.CoreCompileInputs.cache
+C:\Users\Opto\Desktop\HuTao\HuTaoCore\HuTaoCore\obj\Debug\HuTaoCore.csproj.CopyComplete
+C:\Users\Opto\Desktop\HuTao\HuTaoCore\HuTaoCore\obj\Debug\HuTaoCore.dll
+C:\Users\Opto\Desktop\HuTao\HuTaoCore\HuTaoCore\obj\Debug\HuTaoCore.pdb
