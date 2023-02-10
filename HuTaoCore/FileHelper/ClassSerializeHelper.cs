@@ -19,14 +19,12 @@ namespace HuTaoCore.FileHelper
                 bf.Serialize(fs, t);
                 return true;
             }
-            catch (Exception)
-            {
-                return false;
-            }
-            finally
+            catch (Exception ex)
             {
                 fs.Close();
+                throw ex;
             }
+            
         }
 
         public static object DeSerialize(string path)
@@ -39,9 +37,9 @@ namespace HuTaoCore.FileHelper
                     BinaryFormatter binaryFormatter = new BinaryFormatter();
                     return binaryFormatter.Deserialize(fileStream);
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    return null;
+                    throw ex;
                 }
             }
         }
