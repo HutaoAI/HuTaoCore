@@ -7,12 +7,13 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace System
+namespace HuTaoCore.Bind
 {
+
     [Serializable]
     public class BindBase : INotifyPropertyChanged
     {
-        [field:NonSerialized]
+        [field: NonSerialized]
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
@@ -20,7 +21,7 @@ namespace System
         }
         protected virtual void SetProperty<T>(T value, ref T Content, [CallerMemberName] string propertyName = null)
         {
-            if (!object.Equals(value,Content))
+            if (!object.Equals(value, Content))
             {
                 Content = value;
                 OnPropertyChanged(propertyName);
@@ -33,7 +34,7 @@ namespace System
         /// <returns></returns>
         public virtual bool Save(string path)
         {
-            return ClassSerializeHelper.Serialize(path,this);
+            return ClassSerializeHelper.Serialize(path, this);
         }
 
         /// <summary>
@@ -47,3 +48,4 @@ namespace System
         }
     }
 }
+

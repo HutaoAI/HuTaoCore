@@ -28,5 +28,47 @@ namespace System.Drawing
             bmp.UnlockBits(srcBmpData);
             return image;
         }
+
+
+        /// <summary>
+        /// 压缩图像 并保存
+        /// </summary>
+        /// <param name="iSource"></param>
+        /// <param name="outPath"></param>
+        /// <param name="flag"></param>
+        /// <returns></returns>
+        public static bool YaSuo(this Image iSource, string outPath, int flag = 40)
+        {
+            ImageFormat tFormat = iSource.RawFormat;
+            EncoderParameters ep = new EncoderParameters();
+            long[] qy = new long[1];
+            qy[0] = flag;
+            EncoderParameter eParam = new EncoderParameter(System.Drawing.Imaging.Encoder.Quality, qy);
+            ep.Param[0] = eParam;
+            try
+            {
+                ImageCodecInfo[] arrayICI = ImageCodecInfo.GetImageDecoders();
+                ImageCodecInfo jpegICIinfo = null;
+                for (int x = 0; x < arrayICI.Length; x++)
+                {
+                    if (arrayICI[x].FormatDescription.Equals("JPEG"))
+                    {
+                        jpegICIinfo = arrayICI[x];
+                        break;
+                    }
+                }
+                if (jpegICIinfo != null)
+                    iSource.Save(outPath, jpegICIinfo, ep);
+                else
+                    iSource.Save(outPath, tFormat);
+                iSource.Dispose();
+                return true;
+            }
+            catch
+            {
+                iSource.Dispose();
+                return false;
+            }
+        }
     }
 }
