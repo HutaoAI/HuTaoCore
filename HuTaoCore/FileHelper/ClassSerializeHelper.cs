@@ -17,6 +17,7 @@ namespace HuTaoCore.FileHelper
             try
             {
                 bf.Serialize(fs, t);
+                fs.Close();
                 return true;
             }
             catch (Exception ex)
