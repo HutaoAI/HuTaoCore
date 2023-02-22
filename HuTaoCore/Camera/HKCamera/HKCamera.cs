@@ -1,4 +1,4 @@
-﻿using HuTaoCore.HKCamera;
+﻿using HuTaoCore.Camera;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ConnectCamera.HKCamera
+namespace HuTaoCore.Camera
 {
     public class HKCamera : ICamera
     {

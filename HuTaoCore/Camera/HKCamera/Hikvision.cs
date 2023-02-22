@@ -9,7 +9,7 @@ using System.IO;
 using System;
 using HalconDotNet;
 
-namespace HuTaoCore.HKCamera
+namespace HuTaoCore.Camera
 {
     [Serializable]
     /// <summary>
