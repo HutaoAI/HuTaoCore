@@ -494,6 +494,10 @@ namespace HuTaoCore.Camera
         { 
             return GetHImage().ToBitmap();
         }
+        public HImage GetHimage()
+        {
+            return GetHImage();
+        }
     }
 }
 

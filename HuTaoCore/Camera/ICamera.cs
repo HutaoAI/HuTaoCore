@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HalconDotNet;
 
 namespace HuTaoCore.Camera
 {
@@ -15,6 +16,7 @@ namespace HuTaoCore.Camera
         void DisConnectAll();
         Task<Bitmap> GetImageAsync(string CamID, int exposure);
         Bitmap GetImage(string CamID, int exposure);
+        HImage GetHImage(string CamID, int exposure);
         bool IsConnected(string ID);
     }
 }

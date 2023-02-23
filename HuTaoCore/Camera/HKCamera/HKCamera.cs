@@ -1,4 +1,5 @@
-﻿using HuTaoCore.Camera;
+﻿using HalconDotNet;
+using HuTaoCore.Camera;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -132,6 +133,16 @@ namespace HuTaoCore.Camera
                 return CamereDic.Remove(ID);
             else
                 return false;
+        }
+
+        public HImage GetHImage(string CamID, int exposure)
+        {
+            if (!CamereDic[CamID].bl_CamOpen)
+                return null;
+            CamereDic[CamID].setExposureTime((uint)exposure);//设置曝光
+            CamereDic[CamID].softTrigger();//发送软触发采集图像
+            Thread.Sleep(100);
+            return CamereDic[CamID].GetHImage();
         }
     }
 }
